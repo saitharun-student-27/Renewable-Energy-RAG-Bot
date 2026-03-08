@@ -1,0 +1,152 @@
+⚡ Renewable Energy RAG Bot
+
+A Retrieval-Augmented Generation (RAG) based AI chatbot that explains renewable energy concepts, plant operations, and safety procedures using a structured knowledge base.
+
+The application combines vector similarity search with large language model reasoning to generate accurate and context-aware responses.
+
+This project demonstrates how modern AI systems combine LLMs, embeddings, and vector databases to build intelligent assistants.
+
+🚀 Features
+
+• AI chatbot for renewable energy concepts
+• Retrieval-Augmented Generation (RAG) pipeline
+• Vector similarity search using ChromaDB
+• Local embeddings using Sentence Transformers
+• Response generation using Gemini 2.5 Flash
+• Interactive Streamlit web interface
+• Knowledge base covering:
+
+Renewable energy fundamentals
+
+Solar photovoltaic systems
+
+Wind turbine technology
+
+Electrical grid integration
+
+Renewable energy plant safety
+
+🧠 System Architecture
+
+The application follows a Retrieval-Augmented Generation architecture.
+
+User Question
+      │
+      ▼
+Embedding Model
+(Sentence Transformers)
+      │
+      ▼
+Vector Database
+(ChromaDB)
+      │
+Retrieve Relevant Knowledge
+      │
+      ▼
+Prompt Construction
+(System Prompt + Context)
+      │
+      ▼
+Gemini 2.5 Flash
+(LLM Response Generation)
+      │
+      ▼
+Streamlit Interface
+(Display AI Explanation)
+
+This architecture ensures the model produces grounded answers based on the knowledge base.
+
+🛠 Tech Stack
+Component	Technology
+Programming Language	Python
+Web Interface	Streamlit
+LLM	Gemini 2.5 Flash
+Vector Database	ChromaDB
+Embeddings	Sentence Transformers
+AI Method	Retrieval-Augmented Generation (RAG)
+📂 Project Structure
+Renewable-Energy-RAG-Bot
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── chroma_store/ (generated automatically)
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/saitharun-student-27/Renewable-Energy-RAG-Bot.git
+cd Renewable-Energy-RAG-Bot
+
+Install dependencies:
+
+pip install -r requirements.txt
+▶️ Running the Application
+
+Start the Streamlit app:
+
+streamlit run app.py
+
+The application will launch in your browser:
+
+http://localhost:8501
+🔑 API Key Setup
+
+This project uses Gemini LLM for response generation.
+
+You can obtain a free API key from:
+
+https://aistudio.google.com/app/apikey
+
+Enter the API key in the Streamlit sidebar when running the application.
+
+💬 Example Questions
+
+Try asking:
+
+What is renewable energy?
+What are the types of renewable energy?
+How does a solar power plant work?
+What are the main components of a wind turbine?
+What safety practices are used in renewable plants?
+📚 Knowledge Base Coverage
+
+The chatbot retrieves information about:
+
+• Renewable energy fundamentals
+• Solar photovoltaic technology
+• Wind turbine systems
+• Electrical grid infrastructure
+• Safety procedures in energy plants
+
+This ensures responses are context-aware and educational.
+
+🎯 Learning Objectives
+
+This project demonstrates:
+
+• Retrieval-Augmented Generation (RAG)
+• Vector similarity search
+• Prompt engineering
+• Knowledge-grounded AI responses
+• Building AI applications with Streamlit
+
+📈 Future Improvements
+
+Possible enhancements include:
+
+• Document ingestion (PDF / research papers)
+• Expanded renewable energy datasets
+• Cloud deployment
+• Advanced evaluation metrics
+
+👨‍💻 Author
+
+Sai Tharun Kishore
+
+AI / Data Science Enthusiast
+Interested in building intelligent systems and AI-powered applications.
+
+⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
